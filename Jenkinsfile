@@ -84,7 +84,7 @@ pipeline {
         stage('Deploy Artifacts') {
             steps {
                 rtMavenRun (
-                    tool: "Maven",
+                    tool: "maven",
                     pom: 'webapp/pom.xml',
                     goals: 'clean install',
                     deployerId: "MAVEN_DEPLOYER",
